@@ -25,7 +25,6 @@ export function Dashboard() {
           sidenavType === "dark" ? `${normalLogo}` : `${darkLogo}`
         }
       />
-      <Overlay/>
       <div className="p-4 xl:ml-80">
         <DashboardNavbar />
         <Configurator />
