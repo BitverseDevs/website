@@ -3,6 +3,7 @@ import { Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { IconButton } from "@material-tailwind/react";
 import darkLogo from '../../public/assets/logo-ct-dark.png';
 import normalLogo from '../../public/assets/logo-ct.png';
+import { Overlay } from "@/widgets/overlay";
 import {
   Sidenav,
   DashboardNavbar,
@@ -24,6 +25,7 @@ export function Dashboard() {
           sidenavType === "dark" ? `${normalLogo}` : `${darkLogo}`
         }
       />
+      <Overlay/>
       <div className="p-4 xl:ml-80">
         <DashboardNavbar />
         <Configurator />
