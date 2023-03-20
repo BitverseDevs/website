@@ -1,6 +1,5 @@
 import React from "react";
 import staticNavMsg from "./data/staticnavmsg";
-import '../../fonts/Poppins-Regular.ttf';
 import "./staticnavmsg.scss";
 
 
