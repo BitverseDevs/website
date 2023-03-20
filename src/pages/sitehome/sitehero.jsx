@@ -5,7 +5,7 @@ import heroData from "./data/herodata";
 export function Sitehero() {
     return (
         <React.Fragment>
-        <div className="hero-wrap">
+        <section className="hero-wrap">
             <div className="hero-container">
                 <div className="hero-left-content">
                     <div className="hero-left-content-wrap">
@@ -33,7 +33,7 @@ export function Sitehero() {
                     <img className="hero-right-content-img" src="/website/assets/bv-asset/bv-header-media.png"></img>
                 </div>
             </div>
-        </div>
+        </section>
         </React.Fragment>
     );
 }
