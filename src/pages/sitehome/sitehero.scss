@@ -8,14 +8,23 @@
     display: flex;
     justify-content: center;
     .hero-container{
+        width: 1140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .hero-left-content{
             font-family: 'Poppins', sans-serif;
             color: #fff;
             height: 100%;
+            width: 475px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .hero-left-content-wrap{
-                // .hero-left-content-title{
-                //     font-size: 28px;
-                // }
+                width: 475px;
+                .hero-left-content-title{
+                    font-size: 48px;
+                }
                 .hero-left-content-desc{
                     height: 120px;
                     margin-bottom: 20px;
