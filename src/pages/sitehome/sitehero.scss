@@ -14,12 +14,16 @@
                 font-size: 28px;
             }
             .hero-left-content-desc{
+                height: 120px;
+                margin-bottom: 20px;
                 font-family: 'Poppins-Medium', sans-serif;
                 font-size: 14px;
             }
         }
     }
     .hero-left-content-action-items{
+        display: flex;
+        align-items: center;
         .hero-left-content-action-item-play{
             .play-wrap{
                 cursor: pointer;
@@ -43,6 +47,11 @@
                     border-color: transparent transparent transparent #ffffff;
                 }
             }
+        }
+        .hero-left-content-action-item-watch{
+            margin: 0 30px;
+            font-size: 12px;
+            font-family: 'Poppins-Medium', sans-serif;
         }
     }
     // .hero-right-content{
