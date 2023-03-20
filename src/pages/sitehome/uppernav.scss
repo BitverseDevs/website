@@ -1,0 +1,37 @@
+
+.uppernav-wrap{
+    background: lightblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 83px;
+    .uppernav-logo{
+        img{
+            max-height: 45px;
+            max-width: 200px;
+        }
+    }
+    .uppernav-navItems{
+        display: flex;
+        justify-content: space-around;
+        width: 540px;
+        height: 24px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .uppernav-wrap{
+        justify-content: flex-start;
+        .uppernav-navItems{
+            display: none;
+        }
+        .uppernav-button{
+            display: none;
+        }
+    }
+}
+
+
+

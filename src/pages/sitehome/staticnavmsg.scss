@@ -1,0 +1,15 @@
+.staticnavmsg-wrap{
+    box-sizing: border-box;
+    background: rgba(50, 50, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    height: 24px;
+    .staticnavmsg-msg{
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Poppins-Medium', sans-serif;
+    }
+}

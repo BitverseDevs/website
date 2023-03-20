@@ -1,0 +1,157 @@
+.hero-wrap{
+    height: 515px;
+    background: url("/website/assets/bv-asset/bv-header-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    .hero-left-content{
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        height: 100%;
+        .hero-left-content-wrap{
+            .hero-left-content-title{
+                font-size: 28px;
+            }
+            .hero-left-content-desc{
+                font-family: 'Poppins-Medium', sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+    .hero-left-content-action-items{
+        .hero-left-content-action-item-play{
+            .play-wrap{
+                cursor: pointer;
+                background: linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+                border-radius: 50%;
+                box-shadow: 0 0 0 0 linear-gradient(90deg, #e93d88 0%, #e5935a 100%);
+                margin: 10px;
+                height: 60px;
+                width: 60px;
+                transform: scale(1);
+                animation: pulse-white 2.5s infinite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .play-wrap-shape{
+                    // display: none;
+                    box-sizing: border-box;
+                    width: 16px;
+                    height: 16px;
+                    border-width: 8px 0px 8px 16px;
+                    border-color: transparent transparent transparent #ffffff;
+                }
+            }
+        }
+    }
+    // .hero-right-content{
+    //     .hero-right-content-img{
+    //         min-width: 530px;
+    //         max-height: 448px;
+    //         max-height: 509px;
+    //         max-width: 600px;
+    //     }
+    // }
+}
+
+
+
+
+//Responsive Traits Screen
+@media only screen and (max-width: 991px) {
+    .hero-wrap{
+        .hero-left-content{
+            height: 100%;
+            padding: 70px 0 100px 0;
+            .hero-left-content-wrap{
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 345px;
+                .hero-left-content-desc{
+                    line-height: 24px;
+                }
+                .hero-left-content-action-items{
+                    min-height: 108px;
+
+                }
+            }
+        }
+        .hero-right-content{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-wrap{
+        .hero-left-content{
+            .hero-left-content-wrap{
+                .hero-left-content-action-items{
+                    .hero-left-content-action-item-call{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    // .hero-wrap{
+    //     .hero-left-content{
+    //         .hero-left-content-wrap{
+    //             .hero-left-content-action-items{
+    //                 .hero-left-content-action-item-call{
+    //                     display: none;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+// @media only screen and (max-width: 570px) {
+//     .hero-wrap{
+//         width: 646px;
+//         height: 505px;
+//     }
+// }
+
+
+
+// @media only screen and (max-width: 991px) {
+//     .hero-wrap{
+//         width: 976px;
+//         height: 1051px;
+//     }
+// }
+
+// @media only screen and (max-width: 1199px) {
+//     .hero-wrap{
+//         width: 1187px;
+//         height: 910px;
+//     }
+// }
+
+@keyframes pulse-white {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(230, 110, 109, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 20px rgba(230, 110, 109, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(230, 110, 109, 0);
+    }
+  }
