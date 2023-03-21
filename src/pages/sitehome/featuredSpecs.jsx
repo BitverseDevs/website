@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "./components/sectionTitle/sectionTitle";
 import SectionTitleV2 from "./components/sectiontitleV2/sectiontitlev2";
+import BorderLine from "./components/borderline/borderline";
 import { featuredSpecAssets, sectionTitles } from "./data/sitehome";
 import "./featuredSpecs.scss";
 
@@ -15,8 +16,11 @@ export function FeaturedSpecs(props) {
         <React.Fragment>
             <div className="featured-specs-wrap">
                 <SectionTitle featMsg={featMsg1} title={title1} desc={desc1} marginBottom={'75'}/>
-                <img className='featured-specs-img1' src={firstAsset} alt={featuredSpecAssets[0]?.alt}/>
-                <SectionTitleV2 featMsg={featMsg2} title={title2} desc={desc2} isDescUnorderedListed={true}/>
+                <div className='featured-specs-cont1'>
+                    <img className='featured-specs-img1' src={firstAsset} alt={featuredSpecAssets[0]?.alt}/>
+                    <BorderLine/>
+                    <SectionTitleV2 featMsg={featMsg2} title={title2} desc={desc2} isDescUnorderedListed={true}/>
+                </div>
             </div>
         </React.Fragment>
     );
