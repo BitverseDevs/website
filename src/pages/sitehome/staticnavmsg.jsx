@@ -1,6 +1,6 @@
 import React from 'react';
 import staticNavMsg from './data/siteHome';
-import './staticNavMsg.scss';
+import './staticnavmsg.scss';
 
 
 export function StaticNavMsg() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import upperNavData from './data/siteHome';
-import './upperNav.scss';
+import './uppernav.scss';
 
 
 export function Uppernav() {

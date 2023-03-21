@@ -1,5 +1,5 @@
 import React from 'react';
-import './siteHero.scss';
+import './sitehero.scss';
 import { heroData } from './data/siteHome';
 
 export function Sitehero() {
