@@ -1,0 +1,28 @@
+.section-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Poppins-SemiBold', sans-serif;
+    .section-title-feat{
+        text-transform: uppercase;
+        color: #777777;
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin: 0 0 20px;
+        
+    }
+    .section-title-title{
+        color: #000;
+        font-size: 25px;
+        margin: 0 0 15px;
+    }
+    .section-title-desc{
+        color: #777777;
+        font-size: 14px;
+        text-align: center;
+    }
+}
