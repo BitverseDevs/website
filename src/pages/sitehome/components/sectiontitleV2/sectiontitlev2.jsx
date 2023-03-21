@@ -11,7 +11,6 @@ export function SectionTitleV2(props) {
         marginBottom,
         isDescUnorderedListed,
     } = props;
-    console.log(desc, "meow1")
     return (
         <React.Fragment>
             <section style={{marginBottom: `${marginBottom}px`}} className='section-title-v2-container'>
@@ -21,7 +20,6 @@ export function SectionTitleV2(props) {
                 <ul className='section-title-v2-desc-listed'>
                     {desc.map((item, index)=>
                     {
-                        console.log(item, "mama")
                         return(
                         <li className='section-title-v2-desc-listed-items' key={`${index}_li`}>
                         {item}
