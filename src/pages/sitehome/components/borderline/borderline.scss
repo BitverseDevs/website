@@ -1,0 +1,24 @@
+.borderline-container{
+    position: relative;
+    width: 30%;
+    .borderline-line-bg{
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        border: 1px dashed #dbdade;
+        z-index: -1;
+    }
+    .borderline-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .borderline-sh2{
+          margin-bottom: -20px;  
+        }
+    }
+}
