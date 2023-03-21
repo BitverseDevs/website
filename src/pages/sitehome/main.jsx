@@ -1,5 +1,5 @@
 import React from 'react';
-import { brandArea } from "./data/sitehome";
+import { brandArea } from "./data/siteHome";
 import { Uppernav, Sitehero, StaticNavMsg, BrandArea } from '.';
 import './main.scss';
 

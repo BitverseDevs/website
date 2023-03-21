@@ -1,8 +1,8 @@
-export * from '@/pages/sitehome/staticnavmsg';
-export * from '@/pages/sitehome/uppernav';
+export * from '@/pages/sitehome/staticNavMsg';
+export * from '@/pages/sitehome/upperNav';
 export * from '@/pages/sitehome/main';
-export * from '@/pages/sitehome/sitehero';
-export * from '@/pages/sitehome/brandarea';
+export * from '@/pages/sitehome/siteHero';
+export * from '@/pages/sitehome/brandArea';
 
 
 
