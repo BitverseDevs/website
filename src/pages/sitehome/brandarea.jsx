@@ -1,5 +1,5 @@
 import React from 'react';
-// import SectionTitle from './components/sectiontitle/sectionTitle';
+import SectionTitle from './components/sectiontitle/sectionTitle';
 import { responsiveBrands, sectionTitles } from './data/sitehome';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -16,7 +16,7 @@ export function BrandArea(props) {
     ));
   return (
     <React.Fragment>
-        {/* <SectionTitle featMsg={featMsg} title={title} desc={desc} marginBottom={'40'}/> */}
+        <SectionTitle featMsg={featMsg} title={title} desc={desc} marginBottom={'40'}/>
         <div className='carousel-wrap'>
             <AliceCarousel 
             mouseTracking
