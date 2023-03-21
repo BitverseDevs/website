@@ -1,5 +1,5 @@
 import React from "react";
-import upperNavData from "./data/uppernavdata";
+import upperNavData from "./data/sitehome";
 import "./uppernav.scss";
 
 

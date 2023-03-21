@@ -1,6 +1,6 @@
 import React from "react";
 import "./sitehero.scss";
-import heroData from "./data/herodata";
+import { heroData } from "./data/sitehome";
 
 export function Sitehero() {
     return (
