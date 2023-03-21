@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "./components/sectionTitle";
+import SectionTitle from "./components/sectionTitle/sectionTitle";
 import { responsiveBrands, sectionTitles } from "./data/sitehome";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -12,9 +12,7 @@ export function BrandArea(props) {
     const { featMsg, title, desc } = sectionTitles[0];
     const handleDragStart = (e) => e.preventDefault();
     const items2 = brandArray.map(({id, src}) => (
-        <img src={src} key={id} onDragStart={handleDragStart} role='presentation'
-        >
-        </img>
+      <img src={src} key={id} onDragStart={handleDragStart} role='presentation'/>
     ));
   return (
     <React.Fragment>
@@ -22,8 +20,6 @@ export function BrandArea(props) {
         <div className="carousel-wrap">
             <AliceCarousel 
             mouseTracking
-            // autoWidth
-            // autoHeight
             autoPlay
             infinite
             autoPlayInterval = {4500}
