@@ -29,6 +29,24 @@ export const sectionTitles = [
         title: 'Human Resource Information System',
         desc: 'All-in-one human resources information system. Recruitments, Appraisal, Expenses, Leaves, Attendances, etc.'
     },
+    {
+        featMsg: 'TAKE THE NEXT STEP',
+        title: 'Why do I need an HRIS?',
+        desc: [
+            'Faster data extraction and processing',
+            'Reduce duplication of effort, resulting in reduced costs',
+            'The availability of accurate and up-to-date human resources data',
+            'Better analysis leading to more effective decision-making',
+            'More meaningful career planning and advice at all levels',
+            'Better ability to react to environmental changes',
+            'Provides transparency in the system'
+        ]
+    },
+    {
+        featMsg: 'CHOOSE INNOVATION',
+        title: 'Why Bitverse HRIS?',
+        desc: 'Bitverse\'s HRIS software has evolved to facilitate many HR activities such as time tracking, succession planning, and recruitment. Among other things, this can improve efficiency and save working time.'
+    }
 ];
 
 export const responsiveBrands = {
@@ -92,6 +110,19 @@ export const brandArea = [
     }
 ];
 
+export const featuredSpecAssets = [
+    {
+        id: 'fsa01',
+        assetSrc: '/website/assets/bv-asset/xchart-03.png',
+        alt: 'Featured-Specification-Image-01'
+    },
+    {
+        id: 'fsa02',
+        assetSrc: '/website/assets/bv-asset/xchart-04.png',
+        alt: 'Featured-Specification-Image-02'
+    }
+]
+
 export default {
     staticNavMsg,
     upperNavData,
@@ -99,4 +130,5 @@ export default {
     sectionTitles,
     responsiveBrands,
     brandArea,
+    featuredSpecAssets,
 };
