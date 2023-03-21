@@ -3,7 +3,7 @@ export * from '@/pages/sitehome/upperNav';
 export * from '@/pages/sitehome/main';
 export * from '@/pages/sitehome/siteHero';
 export * from '@/pages/sitehome/brandArea';
-
+export * from '@/pages/sitehome/featuredSpecs';
 
 
 
