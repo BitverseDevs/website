@@ -1,9 +1,9 @@
-import React from "react";
-import SectionTitle from "./components/sectionTitle/sectionTitle";
-import { responsiveBrands, sectionTitles } from "./data/siteHome";
+import React from 'react';
+import SectionTitle from './components/sectionTitle/sectionTitle';
+import { responsiveBrands, sectionTitles } from './data/siteHome';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import "./brandArea.scss";
+import './brandArea.scss';
 
 
 
@@ -17,7 +17,7 @@ export function BrandArea(props) {
   return (
     <React.Fragment>
         <SectionTitle featMsg={featMsg} title={title} desc={desc} marginBottom={'40'}/>
-        <div className="carousel-wrap">
+        <div className='carousel-wrap'>
             <AliceCarousel 
             mouseTracking
             autoPlay
