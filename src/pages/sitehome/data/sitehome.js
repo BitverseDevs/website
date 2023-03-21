@@ -121,7 +121,7 @@ export const featuredSpecAssets = [
         assetSrc: '/website/assets/bv-asset/xchart-04.png',
         alt: 'Featured-Specification-Image-02'
     }
-]
+];
 
 export default {
     staticNavMsg,
