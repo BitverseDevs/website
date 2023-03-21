@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from './components/sectiontitle/sectionTitle';
-import { responsiveBrands, sectionTitles } from './data/siteHome';
+import { responsiveBrands, sectionTitles } from './data/sitehome';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './brandarea.scss';

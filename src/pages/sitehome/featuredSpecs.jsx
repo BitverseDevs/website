@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./components/sectionTitle/sectionTitle";
-import { responsiveBrands, sectionTitles } from "./data/siteHome";
+import { responsiveBrands, sectionTitles } from "./data/sitehome";
 import "./featuredSpecs.scss";
 
 
