@@ -17,12 +17,37 @@
     }
     .section-title-title{
         color: #000;
-        font-size: 25px;
+        font-size: 36px;
         margin: 0 0 15px;
     }
     .section-title-desc{
         color: #777777;
         font-size: 14px;
         text-align: center;
+    }
+}
+
+//Responsive Traits Screen
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 991px) {
+    .section-title-container{
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-title-container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .section-title-container{
+        width: 90%;
+        .section-title-title{
+            font-size: 25px;
+        }
     }
 }
