@@ -1,24 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SectionTitle from "./components/sectionTitle/sectionTitle";
 import SectionTitleV2 from "./components/sectiontitleV2/sectiontitlev2";
 import BorderLine from "./components/borderline/borderline";
+import useWindowDimensions from "@/custom-hooks/use-window-dimension/use-window-dimension";
+import helpers from "@/helpers/helpers";
 import { featuredSpecAssets, sectionTitles } from "./data/sitehome";
 import "./featuredSpecs.scss";
 
 
 
 export function FeaturedSpecs(props) {
+    const {width, height} = useWindowDimensions();
+    const [isRender, setIsRender] = useState(undefined);
     const firstAsset = featuredSpecAssets[0]?.assetSrc;
     const secondAsset = featuredSpecAssets[1]?.assetSrc;
     const { featMsg: featMsg1, title: title1, desc: desc1 } = sectionTitles[1];
     const { featMsg: featMsg2, title: title2, desc: desc2 } = sectionTitles[2];
+    const breakPoint = helpers.websiteBreakpoints(width);
+    const breakpointRender = (key) => {
+        const keyProcessor = {
+            'BP_1': false,
+            'BP_2': false,
+            'BP_3': false,
+            'BP_4': true,
+            'BP_5': true,
+            'default': true
+        };
+        return keyProcessor[key] ?? keyProcessor['default'];
+        
+    };
+    useEffect(()=> {
+        setIsRender(breakpointRender(breakPoint));
+    }, [breakPoint])
     return (
         <React.Fragment>
             <div className="featured-specs-wrap">
                 <SectionTitle featMsg={featMsg1} title={title1} desc={desc1} marginBottom={'75'}/>
-                <div className='featured-specs-cont1'>
+                <div className='featured-specs-cont1' border-render={`${isRender}`}>
                     <img className='featured-specs-img1' src={firstAsset} alt={featuredSpecAssets[0]?.alt}/>
-                    <BorderLine/>
+                    {isRender ? <BorderLine/> : null}
                     <SectionTitleV2 featMsg={featMsg2} title={title2} desc={desc2} isDescUnorderedListed={true}/>
                 </div>
             </div>
