@@ -4,12 +4,13 @@ import './borderline.scss';
 
 
 
-export function BorderLine() {
+export function BorderLine(props) {
+    const custWidth = props?.custWidth;
     const firstShape = borderLine[0];
     const secondShape = borderLine[1];
     return (
         <React.Fragment>
-            <section className='borderline-container'>
+            <section className='borderline-container' style={{width: `${custWidth}px`}}>
                 <div className='borderline-line-bg'></div>
                 <div className='borderline-content'>
                     <img className='borderline-sh1' src={firstShape?.assetSrc} alt={firstShape?.alt} key={firstShape?.id}/>
