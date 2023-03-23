@@ -18,20 +18,9 @@ export function FeaturedSpecs(props) {
     const { featMsg: featMsg2, title: title2, desc: desc2 } = sectionTitles[2];
     const { featMsg: featMsg3, title: title3, desc: desc3 } = sectionTitles[3];
     const breakPoint = helpers.websiteBreakpoints(width);
-    const breakpointRender = (key) => {
-        const keyProcessor = {
-            'BP_1': false,
-            'BP_2': false,
-            'BP_3': false,
-            'BP_4': true,
-            'BP_5': true,
-            'default': true
-        };
-        return keyProcessor[key] ?? keyProcessor['default'];
-        
-    };
+    const shouldRender = helpers.breakpointRender(breakPoint);
     useEffect(()=> {
-        setIsRender(breakpointRender(breakPoint));
+        setIsRender(shouldRender);
     }, [breakPoint])
     return (
         <React.Fragment>

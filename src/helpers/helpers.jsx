@@ -12,8 +12,16 @@ const helpers = {
             return 'BP_5'
         }
     },
-    helper2: function(param1){
-
+    breakpointRender: function(key){
+        const keyProcessor = {
+            'BP_1': false,
+            'BP_2': false,
+            'BP_3': false,
+            'BP_4': true,
+            'BP_5': true,
+            'default': true
+        };
+        return keyProcessor[key] ?? keyProcessor['default'];
     },
     helper3: function(param1, param2){
 
