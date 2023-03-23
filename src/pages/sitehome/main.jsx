@@ -12,7 +12,7 @@ export function Main() {
         <Sitehero/>
         <BrandArea brands={brandArea}/>
         <FeaturedSpecs/>
-        {/* <ProductCarousel/> */}
+        <ProductCarousel/>
         </React.Fragment>
     );
 }

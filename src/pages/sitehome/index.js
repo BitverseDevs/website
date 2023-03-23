@@ -4,6 +4,6 @@ export * from '@/pages/sitehome/main';
 export * from '@/pages/sitehome/sitehero';
 export * from '@/pages/sitehome/brandarea';
 export * from '@/pages/sitehome/featuredSpecs';
-export * from '@/pages/sitehome/productcarousel';
+export * from '@/pages/sitehome/productcarousel/productcarousel';
 
 
