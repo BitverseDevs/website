@@ -3,7 +3,7 @@ import AliceCarousel from 'react-alice-carousel';
 import './productcarousel.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { responsiveBrands, productCarouselHome } from '../data/siteHome';
-import ProductItems from './product-items/productitems';
+// import ProductItems from './product-items/productitems';
 import SectionTitleV2 from '../components/sectiontitleV2/sectiontitlev2';
 import useWindowDimensions from '@/custom-hooks/use-window-dimension/use-window-dimension';
 import helpers from '@/helpers/helpers';
