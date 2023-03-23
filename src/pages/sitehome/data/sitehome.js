@@ -123,6 +123,93 @@ export const featuredSpecAssets = [
     }
 ];
 
+export const productCarouselHome = [
+    {
+        id: 'pch01',
+        sectionTitle: {
+            featMsg: 'Employee Record Management, History, Appraisal, 201 Files',
+            title: 'HR',
+            desc: 'Maintain a centralized and complete employee records database for easy-viewing, employee verification and systematic documentation.',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/prod-car01.png',
+        imgAlt: 'product-illustration-#1',
+    },
+    {
+        id: 'pch02',
+        sectionTitle: {
+            featMsg: 'Recruitment, Application, Schedule Interviews, Onboarding, Blacklisting',
+            title: 'Recruitment',
+            desc: 'Talent acquisition and recruitment management, request for additional manpower, post and track job postings and applications and schedule interviews and examinations.',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/prod-car02.png',
+        imgAlt: 'product-illustration-#2',
+    },
+    {
+        id: 'pch03',
+        sectionTitle: {
+            featMsg: 'Manage Holidays, Training, Assets, Travel, and Roles. Scheduling of Conference Rooms',
+            title: 'Admin & Employee Portal',
+            desc: 'Own dashboard and access across all employees. Manage training, assets, conference room scheduling, travel itinerary, cash advance, and roles.',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/prod-car03.png',
+        imgAlt: 'product-illustration-#3',
+    },
+    {
+        id: 'pch04',
+        sectionTitle: {
+            featMsg: 'Lorem Ipsum',
+            title: 'Payroll',
+            desc: 'Lorem Ipsum',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '',
+        imgAlt: 'product-illustration-#4',
+    },
+    {
+        id: 'pch05',
+        sectionTitle: {
+            featMsg: 'Time-in/out easily. Biometrics, Management of Leaves, Overtime, Night differential, and Shifts',
+            title: 'Time-keeping',
+            desc: 'Everything you need to easily track and manage your employees time and attendance using automated, efficient and customizable management tools that can be integrated to your biometric system.',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/prod-car05.png',
+        imgAlt: 'product-illustration-#5',
+    },
+    {
+        id: 'pch06',
+        sectionTitle: {
+            featMsg: 'Request Assets, Conference Rooms, Vehicles, Hotel, Daily Itinerary, Travel',
+            title: 'Requests',
+            desc: 'Manage an array of requests.',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/prod-car06.png',
+        imgAlt: 'product-illustration-#6',
+    },
+    {
+        id: 'pch07',
+        sectionTitle: {
+            featMsg: 'New Hire, Absenteeism, Contractual & Probationary, Lates, Leaves, Resignees',
+            title: 'Reports',
+            desc: 'Conveniently monitor your company\'s HR metrics: General Workforce, Attrition, Daily Attendance, Absenteeism, Planned Leaves, Overtime, Adjustments, and Payroll Expense',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/prod-car07.png',
+        imgAlt: 'product-illustration-#7',
+    },
+];
+
 export default {
     staticNavMsg,
     upperNavData,
@@ -131,4 +218,5 @@ export default {
     responsiveBrands,
     brandArea,
     featuredSpecAssets,
+    productCarouselHome,
 };
