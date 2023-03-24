@@ -254,6 +254,51 @@ export const serviceOfferingsHomeBg = {
         bg: '/website/assets/bv-asset/bv-services-bg.png'
 };
 
+export const productSpecificationTitle = {
+        featMsg: 'FLEXIBLE SOFTWARES THAT CAN FIT YOUR BUSINESS NEEDS',
+        title: 'Our Products',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+};
+
+export const productSpecificationList = [
+    {
+        id: 'psl01',
+        productName: 'Warehouse Receiving (WHSEAPP)',
+        productDesc: '',
+        srcLink: '#',
+    },
+    {
+        id: 'psl02',
+        productName: 'Baranggay Management System (BMS)',
+        productDesc: 'The Barangay Management System aids the Barangay Employees in regards with their daily activities and transactions.',
+        srcLink: '#',
+    },
+    {
+        id: 'psl03',
+        productName: 'Kiosk Software (BIT-Kiosk)',
+        productDesc: 'Provides small stalls an online point-of-sale with order, product, inventory managing.',
+        srcLink: '#',
+    },
+    {
+        id: 'psl04',
+        productName: 'Contact Tracing',
+        productDesc: 'A digital contact-tracing that logs and identify individuals who may have been in contact with an infected individual (COVID-19).',
+        srcLink: '#',
+    },
+    {
+        id: 'psl05',
+        productName: 'PO Tracking System',
+        productDesc: 'The PO Tracking System simply keeps track of orders made by users.',
+        srcLink: '#',
+    },
+    {
+        id: 'psl06',
+        productName: 'Cargo Importing (BIT-Cargo)',
+        productDesc: 'An online logistics ordering and tracking system.',
+        srcLink: '#',
+    },
+];
+
 export default {
     staticNavMsg,
     upperNavData,
@@ -264,5 +309,7 @@ export default {
     featuredSpecAssets,
     productCarouselHome,
     serviceOfferingsHome,
-    serviceOfferingsHomeBg
+    serviceOfferingsHomeBg,
+    productSpecificationTitle,
+    productSpecificationList,
 };
