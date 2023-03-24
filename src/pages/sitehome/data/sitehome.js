@@ -210,6 +210,45 @@ export const productCarouselHome = [
     },
 ];
 
+export const serviceOfferingsHome = [
+    {
+        id: 'soh01',
+        sectionTitle: {
+            featMsg: 'Services We Offer',
+            title: 'Business & Productivity Ready Software',
+            desc: 'We offer multiple products that are fully customizable.',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/xchart-01.png',
+        imgAlt: 'services-illustration-#1',
+    },
+    {
+        id: 'soh01',
+        sectionTitle: {
+            featMsg: 'Services We Offer',
+            title: 'Custom Software Development',
+            desc: 'Want to have a specific web application based on your business flow? We can bujild it from scratch',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/xchart-01.png',
+        imgAlt: 'services-illustration-#1',
+    },
+    {
+        id: 'soh01',
+        sectionTitle: {
+            featMsg: 'Services We Offer',
+            title: 'CMS Website Design',
+            desc: 'Website designing, development and maintenance for SMEs, service-oriented business, product-based business and other complex businesses',
+        },
+        srcTitle: 'LEARN MORE',
+        srcLink: '#',
+        img: '/website/assets/bv-asset/xchart-01.png',
+        imgAlt: 'services-illustration-#1',
+    },
+];
+
 export default {
     staticNavMsg,
     upperNavData,
@@ -219,4 +258,5 @@ export default {
     brandArea,
     featuredSpecAssets,
     productCarouselHome,
+    serviceOfferingsHome,
 };
