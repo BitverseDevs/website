@@ -15,3 +15,15 @@
     src: local('Poppins-SemiBold'),
     url('../../src/fonts/Poppins-SemiBold.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: local('Poppins-Bold'),
+    url('../../src/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: local('Poppins-ExtraBold'),
+    url('../../src/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
