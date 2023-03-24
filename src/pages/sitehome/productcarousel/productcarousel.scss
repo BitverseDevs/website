@@ -11,7 +11,15 @@
     .product-carousel--main-container{
         display: flex;
         .product-carousel--container-caption{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .section-title-v2-container{
+                width: 100%;
+            }
             .hero-left-content-action-item-call{
+                position: relative;
+                left: 2px;
                 height: 51px;
                 font-size: 12px;
                 font-family: 'Poppins-Medium', sans-serif;
@@ -76,6 +84,7 @@
         margin-right: auto;
         .product-carousel--container-caption{
             display: flex;
+            flex-direction: row !important;
             margin-bottom: 30px;
             .hero-left-content-action-item-call{
                 align-self: flex-end;
