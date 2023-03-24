@@ -9,17 +9,8 @@ import useWindowDimensions from '@/custom-hooks/use-window-dimension/use-window-
 import helpers from '@/helpers/helpers';
 
 
-const items = [
-    <a>sds1</a>,
-    <a>sds2</a>,
-    <a>sds3</a>,
-    <a>sds4</a>,
-    <a>sds5</a>,
-    <a>sds6</a>,
-];
-
 const renderDotsItem = (item) => {
-    const label = item.activeIndex + 1;
+    // const label = item.activeIndex + 1;
     const isActive = item.isActive;
     const labelStyle = {
       fontWeight: isActive ? 'bold' : 'normal',
