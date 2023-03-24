@@ -5,8 +5,8 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import { serviceOfferingsHome, serviceOfferingsHomeBg } from '../data/sitehome';
 // import ProductItems from './product-items/productitems';
 import SectionTitleV2 from '../components/sectiontitleV2/sectiontitlev2';
-import useWindowDimensions from '@/custom-hooks/use-window-dimension/use-window-dimension';
-import helpers from '@/helpers/helpers';
+// import useWindowDimensions from '@/custom-hooks/use-window-dimension/use-window-dimension';
+// import helpers from '@/helpers/helpers';
 
 
 const renderDotsItem = (item) => {
@@ -28,18 +28,18 @@ const renderDotsItem = (item) => {
   };
 
 export const ServiceOfferings = () => {
-    const {width} = useWindowDimensions();
-    const breakPoint = helpers.websiteBreakpoints(width);
+    // const {width} = useWindowDimensions();
+    // const breakPoint = helpers.websiteBreakpoints(width);
 
-    const adjPadding = (key) => {
-        const paddingProcessor = {
-            'BP_1': 0,
-            'BP_2': 0,
-            'BP_3': 0,
-            'default': 0,
-        };
-        return paddingProcessor[key] ?? paddingProcessor['default'];
-    };
+    // const adjPadding = (key) => {
+    //     const paddingProcessor = {
+    //         'BP_1': 0,
+    //         'BP_2': 0,
+    //         'BP_3': 0,
+    //         'default': 0,
+    //     };
+    //     return paddingProcessor[key] ?? paddingProcessor['default'];
+    // };
 
     const productItemsArray = serviceOfferingsHome.map((product)=> { 
         return (
@@ -67,13 +67,14 @@ export const ServiceOfferings = () => {
                 <section className='service-offerings--section'>
                     <AliceCarousel
                     // autoWidth
+                    animationType='fadeout'
                     infinite
-                    animationDuration={800}
+                    animationDuration={100}
                     disableButtonsControls
                     items={productItemsArray}
                     mouseTracking
                     renderDotsItem={renderDotsItem}
-                    paddingLeft={adjPadding(breakPoint)}
+                    // paddingLeft={adjPadding(breakPoint)}
                     />
                 </section>
             </div>
