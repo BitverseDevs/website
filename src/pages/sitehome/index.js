@@ -5,5 +5,6 @@ export * from '@/pages/sitehome/sitehero';
 export * from '@/pages/sitehome/brandarea';
 export * from '@/pages/sitehome/featuredSpecs';
 export * from '@/pages/sitehome/productcarousel/productcarousel';
+export * from '@/pages/sitehome/serviceofferings/serviceofferings';
 
 
