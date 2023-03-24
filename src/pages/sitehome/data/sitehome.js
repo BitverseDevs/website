@@ -224,7 +224,7 @@ export const serviceOfferingsHome = [
         imgAlt: 'services-illustration-#1',
     },
     {
-        id: 'soh01',
+        id: 'soh02',
         sectionTitle: {
             featMsg: 'Services We Offer',
             title: 'Custom Software Development',
@@ -233,10 +233,10 @@ export const serviceOfferingsHome = [
         srcTitle: 'LEARN MORE',
         srcLink: '#',
         img: '/website/assets/bv-asset/xchart-01.png',
-        imgAlt: 'services-illustration-#1',
+        imgAlt: 'services-illustration-#2',
     },
     {
-        id: 'soh01',
+        id: 'soh03',
         sectionTitle: {
             featMsg: 'Services We Offer',
             title: 'CMS Website Design',
@@ -245,9 +245,14 @@ export const serviceOfferingsHome = [
         srcTitle: 'LEARN MORE',
         srcLink: '#',
         img: '/website/assets/bv-asset/xchart-01.png',
-        imgAlt: 'services-illustration-#1',
+        imgAlt: 'services-illustration-#3',
     },
 ];
+
+export const serviceOfferingsHomeBg = {
+        id: 'soh04',
+        bg: '/website/assets/bv-asset/bv-services-bg.png'
+};
 
 export default {
     staticNavMsg,
@@ -259,4 +264,5 @@ export default {
     featuredSpecAssets,
     productCarouselHome,
     serviceOfferingsHome,
+    serviceOfferingsHomeBg
 };
