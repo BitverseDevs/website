@@ -1,0 +1,241 @@
+
+
+.service-offerings--background{
+    .service-offerings--section{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        .alice-carousel{
+            display: flex;
+            flex-direction: column-reverse;
+            .alice-carousel__dots{
+                border-bottom: 1px solid blue;
+                display: flex;
+                justify-content: center;
+                .alice-carousel__dots-item{
+                    .service-offerings--data-style{
+                        display: flex;
+                        justify-content: center;
+                        height: 135px;
+                        font-weight: normal;
+                        font-family: 'Poppins-SemiBold';
+                        font-size: 12px;
+                        margin-right: 20px;
+                        padding: 0 10px;
+                        border-radius: 10px 10px 0 0;
+                        background-color: #fff;
+                        cursor: pointer;
+                        &[data-style='true']{
+                            // font-weight: bold;
+                            color: white;
+                            background: linear-gradient(90deg, #0076ff 0%, #00c4ff 100%);
+                            .service-offerings--data-text{
+                             .service-offerings--data-svg{
+                                path{
+                                    stroke: #FFFFFF;
+                                }
+                             }   
+                            }
+                        }
+                        &:hover{
+                            color: white;
+                            background: linear-gradient(90deg, #0076ff 0%, #00c4ff 100%);
+                            transition: all 1s ease;
+                            .service-offerings--data-text{
+                                .service-offerings--data-svg{
+                                   path{
+                                       stroke: #FFFFFF;
+                                   }
+                                }   
+                            }
+                        }
+                        .service-offerings--data-text{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: center;
+                            margin-bottom: 20px;
+                            .service-offerings--data-svg{
+                                height: 26px;
+                                width: 26px;
+                                path{
+                                    stroke: #0076ff;
+                                }
+                            }
+                            .service-offerings--data-title{
+                                height: 54px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .service-offerings--main-container{
+            display: flex;
+            // justify-content: space-between;
+            .service-offerings--container-caption{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .section-title-v2-container{
+                    width: 80%;
+                }
+                .hero-left-content-action-item-call{
+                    position: relative;
+                    left: 2px;
+                    height: 51px;
+                    font-size: 12px;
+                    font-family: 'Poppins-Medium', sans-serif;
+                    padding: 14px;
+                    width: 169px;
+                    // background: 
+                    //             radial-gradient(circle at 100% 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+                    //             radial-gradient(circle at 0 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+                    //             radial-gradient(circle at 100% 0, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+                    //             radial-gradient(circle at 0 0, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+                    //             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 16px) no-repeat,
+                    //             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(95% - 6px) calc(103% - 8px) no-repeat,
+                    //             linear-gradient(90deg, rgb(0,196,255) 0%, #48abe0 100%);
+                    border: 3px solid rgba(0,118,255,1);
+                    border-radius: 8px;
+                    padding: 9px;
+                    // box-sizing: border-box;
+                    color: #22195e;
+                    margin-right: 30px;
+                    &:hover{
+                        background: linear-gradient(90deg, rgba(0,196,255,1) 5%, rgba(0,118,255,1) 76%);
+                        color: #fff;
+                        transition: all 0.5s ease;
+                        border: transparent;
+                    }
+                }
+            }
+            .service-offerings--container-img{
+                -webkit-user-drag: none;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+//Responsive Traits Screen
+@media only screen and (min-width: 1200px) and (max-width: 3700px) {
+    .service-offerings--background{
+        .service-offerings--section{
+            width: 70%;
+            .alice-carousel{
+                .alice-carousel__dots{
+                    .alice-carousel__dots-item{
+                        .service-offerings--data-style{
+                            width: 256px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .service-offerings--background{
+        .service-offerings--section{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            .alice-carousel{
+                .alice-carousel__dots{
+                    .alice-carousel__dots-item{
+                        .service-offerings--data-style{
+                            width: 210px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .service-offerings--background{
+        .service-offerings--section{
+            width: 92%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            .service-offerings--container-caption{
+                display: flex;
+                // flex-direction: row !important;
+                margin-bottom: 30px;
+                .hero-left-content-action-item-call{
+                    // align-self: flex-end;
+                }
+            }
+            .alice-carousel{
+                .alice-carousel__dots{
+                    .alice-carousel__dots-item{
+                        .service-offerings--data-style{
+                            width: 156px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .service-offerings--background{
+        .service-offerings--section{
+            width: 90%;
+            margin-right: unset;
+            .service-offerings--container-caption{
+                // margin-bottom: unset;
+            }
+            .alice-carousel{
+                .alice-carousel__dots{
+                    .alice-carousel__dots-item{
+                        .service-offerings--data-style{
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .service-offerings--background{
+        .service-offerings--section{
+            .alice-carousel{
+                .alice-carousel__dots{
+                    .alice-carousel__dots-item{
+                        .service-offerings--data-style{
+                            width: 116px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
