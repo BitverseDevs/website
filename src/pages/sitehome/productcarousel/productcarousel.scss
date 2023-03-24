@@ -17,23 +17,25 @@
                 font-family: 'Poppins-Medium', sans-serif;
                 padding: 14px;
                 width: 169px;
-                background: 
-                            radial-gradient(circle at 100% 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
-                            radial-gradient(circle at 0 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
-                            radial-gradient(circle at 100% 0, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
-                            radial-gradient(circle at 0 0, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
-                            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 16px) no-repeat,
-                            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(95% - 6px) calc(103% - 8px) no-repeat,
-                            linear-gradient(90deg, rgb(0,196,255) 0%, #48abe0 100%);
+                // background: 
+                //             radial-gradient(circle at 100% 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+                //             radial-gradient(circle at 0 100%, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+                //             radial-gradient(circle at 100% 0, #ffffff 5px, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+                //             radial-gradient(circle at 0 0, #ffffff 5px, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+                //             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 16px) no-repeat,
+                //             linear-gradient(#ffffff, #ffffff) 50% 50%/calc(95% - 6px) calc(103% - 8px) no-repeat,
+                //             linear-gradient(90deg, rgb(0,196,255) 0%, #48abe0 100%);
+                border: 3px solid rgba(0,118,255,1);
                 border-radius: 8px;
                 padding: 9px;
-                box-sizing: border-box;
+                // box-sizing: border-box;
                 color: #22195e;
                 margin-right: 30px;
                 &:hover{
                     background: linear-gradient(90deg, rgba(0,196,255,1) 5%, rgba(0,118,255,1) 76%);
                     color: #fff;
                     transition: all 0.5s ease;
+                    border: transparent;
                 }
             }
         }
@@ -72,6 +74,13 @@
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+        .product-carousel--container-caption{
+            display: flex;
+            margin-bottom: 30px;
+            .hero-left-content-action-item-call{
+                align-self: flex-end;
+            }
+        }
     }
 }
 
@@ -79,16 +88,11 @@
     .product-carousel--section{
         width: 90%;
         margin-right: unset;
+        .product-carousel--container-caption{
+            margin-bottom: unset;
+        }
     }
 }
 
 @media only screen and (max-width: 575px) {
-    // .product-carousel--section{
-    //     width: 90%;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     margin-left: auto;
-    // }
 }
