@@ -9,22 +9,7 @@ import useWindowDimensions from '@/custom-hooks/use-window-dimension/use-window-
 import helpers from '@/helpers/helpers';
 
 
-const renderDotsItem = (item) => {
-    // const label = item.activeIndex + 1;
-    const isActive = item.isActive;
-    const labelStyle = {
-      fontWeight: isActive ? 'bold' : 'normal',
-      color: isActive ? 'blue' : 'black',
-      marginRight: '10px',
-      cursor: 'pointer',
-      fontFamily: 'Poppins-SemiBold',
-    };
-    return (
-      <div style={labelStyle}>
-        {productCarouselHome[item.activeIndex]?.sectionTitle.title}
-      </div>
-    );
-  };
+
 
 export const ProductCarousel = () => {
     const {width, height} = useWindowDimensions();
@@ -45,6 +30,36 @@ export const ProductCarousel = () => {
         };
         return paddingProcessor[key] ?? paddingProcessor['default'];
     };
+
+    const adjMargin = (key) => {
+        const marginProcessor = {
+            'BP_1': '0',
+            'BP_2': '0',
+            'BP_3': '0',
+            'default': '30px',
+        };
+        return marginProcessor[key] ?? marginProcessor['default'];
+    };
+
+    const renderDotsItem = (item) => {
+        // const label = item.activeIndex + 1;
+        const isActive = item.isActive;
+        const labelStyle = {
+          fontWeight: isActive ? 'bold' : 'normal',
+          color: isActive ? 'blue' : 'black',
+          marginRight: '10px',
+          cursor: 'pointer',
+          fontSize: '20px', 
+          fontWeight: '900',
+          fontFamily: 'Poppins-SemiBold',
+          marginTop: `${adjMargin(breakPoint)}`,
+        };
+        return (
+          <div style={labelStyle}>
+            {productCarouselHome[item.activeIndex]?.sectionTitle.title}
+          </div>
+        );
+      };
 
     const productItemsArray = productCarouselHome.map((product)=> { 
         return (
