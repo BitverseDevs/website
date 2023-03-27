@@ -1,6 +1,21 @@
 import React from 'react';
-import { brandArea, productSpecificationTitle, productSpecificationList } from './data/sitehome';
-import { Uppernav, Sitehero, StaticNavMsg, BrandArea, FeaturedSpecs, ProductCarousel, ServiceOfferings, ProductSpecs } from '.';
+import { 
+    brandArea, 
+    productSpecificationTitle, 
+    productSpecificationList, 
+    websitePortfolioList 
+} from './data/sitehome';
+import { 
+    Uppernav, 
+    Sitehero, 
+    StaticNavMsg, 
+    BrandArea, 
+    FeaturedSpecs, 
+    ProductCarousel, 
+    ServiceOfferings, 
+    ProductSpecs,
+    WebsitePortfolio 
+} from '.';
 import './main.scss';
 
 
@@ -15,6 +30,7 @@ export function Main() {
         <ProductCarousel/>
         <ServiceOfferings/>
         <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
+        <WebsitePortfolio portfolios={websitePortfolioList}/>
         </React.Fragment>
     );
 }
