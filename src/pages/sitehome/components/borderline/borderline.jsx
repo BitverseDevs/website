@@ -13,9 +13,9 @@ export function BorderLine(props) {
             <section className='borderline-container' style={{width: `${custWidth}px`}}>
                 <div className='borderline-line-bg'></div>
                 <div className='borderline-content'>
-                    <img className='borderline-sh1' src={firstShape?.assetSrc} alt={firstShape?.alt} key={firstShape?.id}/>
-                    <img className='borderline-sh2' src={secondShape?.assetSrc} alt={secondShape?.alt} key={secondShape?.id}/>
-                    <img className='borderline-sh1' src={firstShape?.assetSrc} alt={firstShape?.alt} key={firstShape?.id}/>
+                    <img className='borderline-sh1' src={firstShape?.assetSrc} alt={firstShape?.alt} key={firstShape?.id+'1'}/>
+                    <img className='borderline-sh2' src={secondShape?.assetSrc} alt={secondShape?.alt} key={secondShape?.id+'2'}/>
+                    <img className='borderline-sh1' src={firstShape?.assetSrc} alt={firstShape?.alt} key={firstShape?.id+'3'}/>
                 </div>
             </section>
         </React.Fragment>
