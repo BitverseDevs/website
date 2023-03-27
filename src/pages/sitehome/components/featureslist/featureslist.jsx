@@ -9,7 +9,7 @@ function FeaturesList(props) {
             <ul className='features-list--list-ul'>
                 {featuresArray.map(({id, productName, productDesc, srcLink})=>{
                     return(
-                        <li className='features-list--list-li'>
+                        <li className='features-list--list-li' key={id}>
                             <h6 className='features-list--h6-wrap'>
                                 <a href={srcLink} className='features-list--content-wrap'>
                                     <span className='features-list--icon-wrap'>
