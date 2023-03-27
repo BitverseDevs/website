@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import SectionTitle from "./components/sectionTitle/sectionTitle";
-import SectionTitleV2 from "./components/sectiontitleV2/sectiontitlev2";
-import BorderLine from "./components/borderline/borderline";
+import SectionTitle from "../components/sectionTitle/sectionTitle";
+import SectionTitleV2 from "../components/sectiontitleV2/sectiontitlev2";
+import BorderLine from "../components/borderline/borderline";
 import useWindowDimensions from "@/custom-hooks/use-window-dimension/use-window-dimension";
 import helpers from "@/helpers/helpers";
-import { featuredSpecAssets, sectionTitles } from "./data/sitehome";
+import { featuredSpecAssets, sectionTitles } from "../data/sitehome";
 import "./featuredSpecs.scss";
 
 
