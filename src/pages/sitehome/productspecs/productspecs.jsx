@@ -1,12 +1,11 @@
 import React from 'react';
 import './productspecs.scss';
-import { productSpecificationTitle } from '../data/sitehome';
 import SectionTitle from '../components/sectionTitle/sectionTitle';
+import FeaturesList from '../components/featureslist/featureslist';
 
 
-
-export function ProductSpecs(){ 
-    const {featMsg, title, desc} = productSpecificationTitle;
+export function ProductSpecs(props){ 
+    const {featMsg, title, desc} = props?.productsTitle;
 
 
     return(
@@ -16,7 +15,7 @@ export function ProductSpecs(){
                     <SectionTitle featMsg={featMsg} title={title} desc={desc}/>
                 </h2>
                 <summary className='product-specs--summary'>
-                    <p>hello</p>
+                    <FeaturesList products={props?.productsList}/>
                 </summary>
             </section>
         </React.Fragment>
