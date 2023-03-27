@@ -28,18 +28,6 @@ const renderDotsItem = (item) => {
   };
 
 export const ServiceOfferings = () => {
-    // const {width} = useWindowDimensions();
-    // const breakPoint = helpers.websiteBreakpoints(width);
-
-    // const adjPadding = (key) => {
-    //     const paddingProcessor = {
-    //         'BP_1': 0,
-    //         'BP_2': 0,
-    //         'BP_3': 0,
-    //         'default': 0,
-    //     };
-    //     return paddingProcessor[key] ?? paddingProcessor['default'];
-    // };
 
     const productItemsArray = serviceOfferingsHome.map((product)=> { 
         return (
@@ -66,7 +54,6 @@ export const ServiceOfferings = () => {
             <div className='service-offerings--background'>
                 <section className='service-offerings--section'>
                     <AliceCarousel
-                    // autoWidth
                     animationType='fadeout'
                     infinite
                     animationDuration={100}
@@ -74,7 +61,6 @@ export const ServiceOfferings = () => {
                     items={productItemsArray}
                     mouseTracking
                     renderDotsItem={renderDotsItem}
-                    // paddingLeft={adjPadding(breakPoint)}
                     />
                 </section>
             </div>
