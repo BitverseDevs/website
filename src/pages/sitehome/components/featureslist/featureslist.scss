@@ -1,0 +1,84 @@
+.features-list--section-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    .features-list--list-ul{
+        .features-list--list-li{
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+            &:hover{
+                background-color: #00c4ff;
+            }
+            .features-list--h6-wrap{
+                .features-list--content-wrap{
+                    display: block;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .features-list--icon-wrap{
+                        font-family: 'Poppins-Bold';
+                        font-size: 20px;
+                        display: flex;
+                        .features-list--svg-wrap{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            width: 60px;
+                            height: 80px;
+                            .features-list--data-svg{
+                                height: 30px;
+                                width: 30px;
+                            }
+                        }
+                        .features-list--svg-title{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                    .features-list--svg-content{
+                        font-family: 'Poppins-Medium';
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//Responsive Traits Screen
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .features-list--section-wrap{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .features-list--section-wrap{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .features-list--section-wrap{
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .features-list--section-wrap{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .features-list--section-wrap{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+}
