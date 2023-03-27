@@ -1,0 +1,27 @@
+.website-portfolio--section-wrap{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .website-portfolio--figure-caption{
+        .website-portfolio--section-title{
+            outline: 1px solid red;
+        }
+        .website-portfolio--section-desc{
+            outline: 1px solid blue;
+        }
+    }
+    .website-portfolio--figure-section{
+        .website-portfolio--figure-wraps{
+            margin-top: 40px;
+            .website-portfolio--figure-items{
+                border-radius: 47px;
+                box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+}
