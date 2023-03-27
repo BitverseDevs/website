@@ -1,5 +1,5 @@
 import React from 'react';
-import { brandArea } from './data/sitehome';
+import { brandArea, productSpecificationTitle, productSpecificationList } from './data/sitehome';
 import { Uppernav, Sitehero, StaticNavMsg, BrandArea, FeaturedSpecs, ProductCarousel, ServiceOfferings, ProductSpecs } from '.';
 import './main.scss';
 
@@ -14,7 +14,7 @@ export function Main() {
         <FeaturedSpecs/>
         <ProductCarousel/>
         <ServiceOfferings/>
-        {/* <ProductSpecs/> */}
+        <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
         </React.Fragment>
     );
 }
