@@ -299,6 +299,44 @@ export const productSpecificationList = [
     },
 ];
 
+export const websitePortfolioTitle = {
+    title: 'Our Website Portfolio',
+    desc: 'There are many variations of passages of Lorem Ipsum available.'
+};
+
+export const websitePortfolioList = [
+    {
+        id: 'wpl01',
+        src: '/website/assets/bv-asset/carou-bot01.png',
+        alt: 'webportfolio-asset#1',
+        srcLink: '#',
+    },
+    {
+        id: 'wpl02',
+        src: '/website/assets/bv-asset/carou-bot02.png',
+        alt: 'webportfolio-asset#2',
+        srcLink: '#',
+    },
+    {
+        id: 'wpl03',
+        src: '/website/assets/bv-asset/carou-bot03.png',
+        alt: 'webportfolio-asset#3',
+        srcLink: '#',
+    },
+    {
+        id: 'wpl04',
+        src: '/website/assets/bv-asset/carou-bot04.png',
+        alt: 'webportfolio-asset#4',
+        srcLink: '#',
+    },
+    {
+        id: 'wpl05',
+        src: '/website/assets/bv-asset/carou-bot05.png',
+        alt: 'webportfolio-asset#5',
+        srcLink: '#',
+    },
+];
+
 export default {
     staticNavMsg,
     upperNavData,
@@ -312,4 +350,6 @@ export default {
     serviceOfferingsHomeBg,
     productSpecificationTitle,
     productSpecificationList,
+    websitePortfolioTitle,
+    websitePortfolioList,
 };
