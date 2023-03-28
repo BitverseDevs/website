@@ -6,7 +6,6 @@ import SectionTitle from '../components/sectionTitle/sectionTitle';
 export function WebsitePortfolio(props) {
     const portfolioArray = Object.values(props.portfolios);
     const {title, desc} = websitePortfolioTitle;
-    console.log(portfolioArray, 'meow1');
     return (
         <section className='website-portfolio--section-wrap'>
             {/* <figcaption className='website-portfolio--fig-caption'>

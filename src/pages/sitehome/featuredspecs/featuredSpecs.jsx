@@ -9,7 +9,7 @@ import "./featuredSpecs.scss";
 
 
 
-export function FeaturedSpecs(props) {
+export function FeaturedSpecs() {
     const {width} = useWindowDimensions();
     const [isRender, setIsRender] = useState(undefined);
     const firstAsset = featuredSpecAssets[0]?.assetSrc;

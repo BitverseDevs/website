@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import './serviceofferings.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { serviceOfferingsHome, serviceOfferingsHomeBg } from '../data/sitehome';
-// import ProductItems from './product-items/productitems';
+import { serviceOfferingsHome } from '../data/sitehome';
 import SectionTitleV2 from '../components/sectiontitleV2/sectiontitlev2';
-// import useWindowDimensions from '@/custom-hooks/use-window-dimension/use-window-dimension';
-// import helpers from '@/helpers/helpers';
-
 
 const renderDotsItem = (item) => {
-    // const label = item.activeIndex + 1;
     const isActive = item.isActive;
     return (
       <div className={'service-offerings--data-style'} data-style={isActive}>

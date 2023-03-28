@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import './productcarousel.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { responsiveBrands, productCarouselHome } from '../data/sitehome';
-// import ProductItems from './product-items/productitems';
 import SectionTitleV2 from '../components/sectiontitleV2/sectiontitlev2';
 import useWindowDimensions from '@/custom-hooks/use-window-dimension/use-window-dimension';
 import helpers from '@/helpers/helpers';
@@ -12,7 +10,7 @@ import helpers from '@/helpers/helpers';
 
 
 export const ProductCarousel = () => {
-    const {width, height} = useWindowDimensions();
+    const {width} = useWindowDimensions();
     const [isRender, setIsRender] = useState(undefined);
     const breakPoint = helpers.websiteBreakpoints(width);
     const shouldRender = helpers.breakpointRender(breakPoint);
