@@ -337,6 +337,13 @@ export const websitePortfolioList = [
     },
 ];
 
+export const callToActionTitle = {
+    preMsg: 'Want a software specifically for your business needs?',
+    proMsg: 'We can make it for you!',
+    actionMsg: 'CONTACT US',
+    bgLink: '/website/assets/bv-asset/bv-footer-banner.png',
+}
+
 export default {
     staticNavMsg,
     upperNavData,
@@ -352,4 +359,5 @@ export default {
     productSpecificationList,
     websitePortfolioTitle,
     websitePortfolioList,
+    callToActionTitle,
 };

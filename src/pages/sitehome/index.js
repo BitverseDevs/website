@@ -8,4 +8,4 @@ export * from '@/pages/sitehome/productcarousel/productcarousel';
 export * from '@/pages/sitehome/serviceofferings/serviceofferings';
 export * from '@/pages/sitehome/productspecs/productspecs';
 export * from '@/pages/sitehome/websiteportfolio/websiteportfolio';
-// export * from '@/pages/sitehome/calltoaction/calltoaction';
+export * from '@/pages/sitehome/calltoaction/calltoaction';
