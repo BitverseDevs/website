@@ -41,6 +41,7 @@
                 .website-portfolio--figure-title,
                 .website-portfolio--figure-button{
                     transform: translate(650%, -1500%);
+                    // opacity: 0;
                     transition: transform 0.5s ease-in-out;
                 }
                 p, button{
@@ -82,6 +83,7 @@
                     .website-portfolio--figure-title,
                     .website-portfolio--figure-button{
                         transform: translate(0%, 0%);
+                        // opacity: 1;
                     }
                 }
             }
