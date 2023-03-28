@@ -18,6 +18,7 @@ import {
     WebsitePortfolio,
     CallToAction,
 } from '.';
+import ParticleBg from '../ui/particlebg';
 import './main.scss';
 
 
@@ -28,12 +29,15 @@ export function Main() {
                 <StaticNavMsg/>
                 <Uppernav/>
                 <Sitehero/>
-                <BrandArea brands={brandArea}/>
-                <FeaturedSpecs/>
-                <ProductCarousel/>
-                <ServiceOfferings/>
-                <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
-                <WebsitePortfolio portfolios={websitePortfolioList}/>
+                {/* <> */}
+                    <ParticleBg/>
+                    <BrandArea brands={brandArea}/>
+                    <FeaturedSpecs/>
+                    <ProductCarousel/>
+                    <ServiceOfferings/>
+                    <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
+                    <WebsitePortfolio portfolios={websitePortfolioList}/>
+                {/* </> */}
                 <CallToAction data={callToActionTitle}/>
             </summary>
         </React.Fragment>
