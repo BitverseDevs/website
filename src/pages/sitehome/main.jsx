@@ -3,7 +3,8 @@ import {
     brandArea, 
     productSpecificationTitle, 
     productSpecificationList, 
-    websitePortfolioList 
+    websitePortfolioList ,
+    callToActionTitle,
 } from './data/sitehome';
 import { 
     Uppernav, 
@@ -14,7 +15,8 @@ import {
     ProductCarousel, 
     ServiceOfferings, 
     ProductSpecs,
-    WebsitePortfolio 
+    WebsitePortfolio,
+    CallToAction,
 } from '.';
 import './main.scss';
 
@@ -22,15 +24,18 @@ import './main.scss';
 export function Main() {
     return (
         <React.Fragment>
-        <StaticNavMsg/>
-        <Uppernav/>
-        <Sitehero/>
-        <BrandArea brands={brandArea}/>
-        <FeaturedSpecs/>
-        <ProductCarousel/>
-        <ServiceOfferings/>
-        <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
-        <WebsitePortfolio portfolios={websitePortfolioList}/>
+            <summary className='main-site-home--page-wrap'>
+                <StaticNavMsg/>
+                <Uppernav/>
+                <Sitehero/>
+                <BrandArea brands={brandArea}/>
+                <FeaturedSpecs/>
+                <ProductCarousel/>
+                <ServiceOfferings/>
+                <ProductSpecs productsTitle={productSpecificationTitle} productsList={productSpecificationList}/>
+                <WebsitePortfolio portfolios={websitePortfolioList}/>
+                <CallToAction data={callToActionTitle}/>
+            </summary>
         </React.Fragment>
     );
 }
