@@ -12,7 +12,7 @@ export function BrandArea(props) {
     const { featMsg, title, desc } = sectionTitles[0];
     const handleDragStart = (e) => e.preventDefault();
     const items2 = brandArray.map(({id, src}) => (
-      <img src={src} key={id} onDragStart={handleDragStart} role='presentation'/>
+      <img className={'brand-area-item'} src={src} key={id} onDragStart={handleDragStart} role='presentation'/>
     ));
   return (
     <React.Fragment>

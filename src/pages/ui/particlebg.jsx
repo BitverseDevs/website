@@ -56,7 +56,7 @@ export const ParticleBg = () => {
                     },
                     links: {
                         color: "#00c4ff",
-                        distance: 120,
+                        distance: 150,
                         enable: true,
                         opacity: 0.5,
                         width: 1,
@@ -71,15 +71,15 @@ export const ParticleBg = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 3,
+                        speed: {min: 1, max: 5},
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                         },
-                        value: 80,
+                        value: 48,
                     },
                     opacity: {
                         value: 0.3,
