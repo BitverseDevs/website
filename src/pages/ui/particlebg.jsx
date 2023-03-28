@@ -24,7 +24,7 @@ export const ParticleBg = () => {
             options={{
                 background: {
                     color: {
-                        value: "#fffff",
+                        value: "#eff9f3",
                     },
                 },
                 fpsLimit: 1200,
@@ -71,7 +71,7 @@ export const ParticleBg = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: {min: 1, max: 5},
+                        speed: {min: 1, max: 1},
                         straight: false,
                     },
                     number: {
