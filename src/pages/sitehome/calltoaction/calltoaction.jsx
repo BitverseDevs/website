@@ -10,7 +10,7 @@ export function CallToAction(props) {
             </img>
             <div className='call-to-action--msg-wrap'>
                 <h4 className='call-to-action--msg-pre'>
-                    {preMsg}asd
+                    {preMsg}
                 </h4>
                 <p className='call-to-action--msg-pro'>
                     {proMsg}
