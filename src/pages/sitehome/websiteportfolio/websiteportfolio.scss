@@ -6,14 +6,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .website-portfolio--figure-caption{
-        .website-portfolio--section-title{
-            outline: 1px solid red;
-        }
-        .website-portfolio--section-desc{
-            outline: 1px solid #0076ff;
-        }
-    }
+    margin-bottom: 120px;
+    // .website-portfolio--figure-caption{
+    //     .website-portfolio--section-title{
+    //         outline: 1px solid red;
+    //     }
+    //     .website-portfolio--section-desc{
+    //         outline: 1px solid #0076ff;
+    //     }
+    // }
     .website-portfolio--figure-section{
         .website-portfolio--figure-wraps{
             position: relative;
