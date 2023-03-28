@@ -19,9 +19,17 @@ export function WebsitePortfolio(props) {
             </figcaption> */}
             <SectionTitle title={title} desc={desc}/>
             <ul className='website-portfolio--figure-section'>
-                {portfolioArray.map(({id, src, alt})=>{
+                {portfolioArray.map(({id, src, alt, srcLink})=>{
                     return (
                         <li className='website-portfolio--figure-wraps' key={id}>
+                            <div className='website-portfolio--figure-desc'>
+                                <p className='website-portfolio--figure-title'>{alt}</p>
+                                <button className='website-portfolio--figure-button'>
+                                    <a href={srcLink} target={'_blank'}>
+                                    {'Visit Website'}
+                                    </a>
+                                </button>
+                            </div>
                             <img className='website-portfolio--figure-items' src={src} alt={alt}>
                             </img>
                         </li>

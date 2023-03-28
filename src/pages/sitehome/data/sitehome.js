@@ -308,32 +308,32 @@ export const websitePortfolioList = [
     {
         id: 'wpl01',
         src: '/website/assets/bv-asset/carou-bot01.png',
-        alt: 'webportfolio-asset#1',
-        srcLink: '#',
+        alt: 'DDT Konstract, Inc.',
+        srcLink: 'https://ddtkonstract.com/',
     },
     {
         id: 'wpl02',
         src: '/website/assets/bv-asset/carou-bot02.png',
-        alt: 'webportfolio-asset#2',
-        srcLink: '#',
+        alt: 'Conti\'s Bakeshop & Resto',
+        srcLink: 'https://contis.ph/',
     },
     {
         id: 'wpl03',
         src: '/website/assets/bv-asset/carou-bot03.png',
-        alt: 'webportfolio-asset#3',
-        srcLink: '#',
+        alt: 'S&R Membership Shopping',
+        srcLink: 'https://www.snrshopping.com/',
     },
     {
         id: 'wpl04',
         src: '/website/assets/bv-asset/carou-bot04.png',
-        alt: 'webportfolio-asset#4',
-        srcLink: '#',
+        alt: 'Unihealth-Southwoods Hospital & Medical Center',
+        srcLink: 'https://unihealthsouthwoodshospital.com/',
     },
     {
         id: 'wpl05',
         src: '/website/assets/bv-asset/carou-bot05.png',
-        alt: 'webportfolio-asset#5',
-        srcLink: '#',
+        alt: 'Global Care Medical Center of Bay',
+        srcLink: 'https://bay.globalcarehospitals.com/',
     },
 ];
 

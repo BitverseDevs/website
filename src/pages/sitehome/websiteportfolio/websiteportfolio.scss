@@ -11,17 +11,128 @@
             outline: 1px solid red;
         }
         .website-portfolio--section-desc{
-            outline: 1px solid blue;
+            outline: 1px solid #0076ff;
         }
     }
     .website-portfolio--figure-section{
         .website-portfolio--figure-wraps{
+            position: relative;
             margin-top: 40px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 1px 1px 14px rgba(0, 118, 255, 1);
+            // transition: all 0.5s ease-in-out;
+            .website-portfolio--figure-desc{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                background: linear-gradient(to bottom right, #012d5f, #00c4ff);
+                opacity: 0.8;
+                background-size: 200% 100%;
+                background-position: left top;
+                color: #fff;
+                z-index: 20;
+                transform: translateX(-100%);
+                transition: transform 0.5s;
+                .website-portfolio--figure-title,
+                .website-portfolio--figure-button{
+                    transform: translate(650%, -1500%);
+                    transition: transform 0.5s ease-in-out;
+                }
+                p, button{
+                    display: inline-block;
+                    font-family: 'Poppins-Bold', sans-serif;
+                    font-size: 18px;
+                    text-align: center;
+                    a{
+                        font-size: 14px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+                .website-portfolio--figure-button{
+                    position: absolute;
+                    height: 40px;
+                    width: 170px;
+                    margin-top: 120px;
+                    background-color: transparent;
+                    border: 2px solid #fff;
+                    // background: linear-gradient(to bottom right, black, white);
+                    // background-size: 200% 100%;
+                    border-radius: 10px;
+                    &:hover{
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
             .website-portfolio--figure-items{
-                border-radius: 47px;
-                box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5);
+                transition: all 1s;
+            }
+            &:hover{
+                .website-portfolio--figure-items{
+                    transform: scale(1.12);
+                }
+                .website-portfolio--figure-desc{
+                    transform: translateY(0%);
+                    background-position: right top;
+                    .website-portfolio--figure-title,
+                    .website-portfolio--figure-button{
+                        transform: translate(0%, 0%);
+                    }
+                }
             }
         }
     }
 
 }
+
+#logo{
+    margin:auto;
+    width:430px; 
+  }
+  #navbar{
+    width:100%;
+    height:50px;
+    display:table;
+    margin:auto;
+  }
+  #navlinks ul {
+    display:table;
+    border-collapse:collapse;
+    width:100%;
+    margin:0 0 20px;
+    padding:0;
+    list-style:none;
+  }
+  #navlinks li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    width:20%;
+    background: linear-gradient(to right, #b35252 50%, #0c6429 50%);
+    background-size: 200% 100%;
+    background-position:left top;
+    transition:all 1s linear;
+  }
+  #navlinks li:hover{
+    background-position:right top;
+  }
+  #navlinks a {
+    text-decoration:none;
+    color: #999;
+    text-transform: uppercase;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    font: bold 12px/25px Arial, Helvetica;
+    // transition:color 1s ease-in-out;
+  }
+  
+  #navlinks li:hover a{
+    color:black;
+  
+  }
