@@ -5,7 +5,7 @@ import {
     productSpecificationList, 
     websitePortfolioList ,
     callToActionTitle,
-} from './data/sitehome';
+} from '../../data/sitehome';
 import { 
     Uppernav, 
     Sitehero, 

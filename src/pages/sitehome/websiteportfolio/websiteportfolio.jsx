@@ -1,6 +1,6 @@
 import React from 'react';
 import './websiteportfolio.scss';
-import { websitePortfolioTitle } from '../data/sitehome';
+import { websitePortfolioTitle } from '../../../data/sitehome';
 import SectionTitle from '../components/sectionTitle/sectionTitle';
 
 export function WebsitePortfolio(props) {

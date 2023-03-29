@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './sitehero.scss';
-import { heroData } from '../data/sitehome';
+import { heroData } from '../../../data/sitehome';
 
 export function Sitehero() {
     const [selectedItem, setSelectedItem] = useState(false); 

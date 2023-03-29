@@ -2,7 +2,7 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import './serviceofferings.scss';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { serviceOfferingsHome } from '../data/sitehome';
+import { serviceOfferingsHome } from '../../../data/sitehome';
 import SectionTitleV2 from '../components/sectiontitleV2/sectiontitlev2';
 
 const renderDotsItem = (item) => {

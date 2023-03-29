@@ -1,5 +1,5 @@
 import React from 'react';
-import { staticNavMsg } from '../data/sitehome';
+import { staticNavMsg } from '../../../data/sitehome';
 import './staticnavmsg.scss';
 
 

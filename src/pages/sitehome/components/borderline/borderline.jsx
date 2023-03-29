@@ -1,5 +1,5 @@
 import React from 'react';
-import { borderLine } from '../../data/uiData';
+import { borderLine } from '../../../../data/uiData';
 import './borderline.scss';
 
 
