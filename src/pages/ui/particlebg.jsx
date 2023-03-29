@@ -25,6 +25,7 @@ export const ParticleBg = () => {
                 background: {
                     color: {
                         value: "#eff9f3",
+                        // value: "#000",
                     },
                 },
                 fpsLimit: 1200,
@@ -53,9 +54,11 @@ export const ParticleBg = () => {
                 particles: {
                     color: {
                         value: "#0063FF",
+                        // value: "#FFFFFF",
                     },
                     links: {
-                        color: "#0063FF",
+                        color: "#D3D3D3",
+                        // color: "#FFFFFF",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -85,10 +88,10 @@ export const ParticleBg = () => {
                         value: 0.3,
                     },
                     shape: {
-                        type: "circle",
+                        type: "edge",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 6 },
                     },
                 },
                 detectRetina: true,
