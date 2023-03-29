@@ -19,6 +19,7 @@ import {
     CallToAction,
 } from '.';
 import ParticleBg from '../ui/particlebg';
+import FooterV1 from '../footer/footerv1';
 import './main.scss';
 
 
@@ -39,6 +40,7 @@ export function Main() {
                     <WebsitePortfolio portfolios={websitePortfolioList}/>
                 {/* </> */}
                 <CallToAction data={callToActionTitle}/>
+                <FooterV1/>
             </summary>
         </React.Fragment>
     );
