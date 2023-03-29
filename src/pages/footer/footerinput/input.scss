@@ -1,0 +1,100 @@
+.input-section--email-wrap{
+    display: flex;
+    height: 50px;
+    position: relative;
+    .input-section--input-wrap{
+        min-width: 350px;
+        max-width: 475px;
+        display: block;
+        position: relative;
+        .input-section--label-check{
+            color: rgba(191, 191, 191, 1);
+            position: absolute;
+            padding: 15px 10px 15px 10px;
+            z-index: 999;
+            border-radius: 10px;
+            background: transparent;
+            transition: all 0.2s ease;
+            &.focused{
+                &.content{
+                    transform: translate(50%, -50%);
+                    background: #eff9f3;
+                    padding: 0;
+                    color: #0076ff;
+                    padding: 0 4px 0 4px;
+                }
+            }
+            &.focused{
+                &.noContent{
+                    transform: translate(50%, -50%);
+                    background: #eff9f3;
+                    padding: 0;
+                    color: #0076ff;
+                    padding: 0 4px 0 4px;
+                }
+            }
+            &.unFocused{
+                &.noContent{
+                    color: rgba(191, 191, 191, 1);
+                    position: absolute;
+                    padding: 15px 10px 15px 10px;
+                    z-index: 999;
+                    border-radius: 10px;
+                    background: transparent;
+                    visibility: hidden;
+                }
+            }
+            &.unFocused{
+                &.content{
+                    transform: translate(50%, -50%);
+                    background: #eff9f3;
+                    padding: 0;
+                    color: #0076ff;
+                    padding: 0 4px 0 4px;
+                }
+            }
+        }
+        .input-section--input-box{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 10px 0 0 10px;
+            padding-left: 10px;
+            &:focus{
+                outline-width: 0;
+                outline-style: groove;
+                border: 1px solid #0076ff;
+                &::placeholder{
+                    opacity: 0;
+                }
+            }
+            &::placeholder{
+                transition: all 0.7s ease;
+            }
+
+        }
+        &::after{
+            background: #eff9f3;
+            // background: red;
+            position: absolute;
+            content: '';
+            display: block;
+            height: 100%;
+            width: 32%;
+            top: 0;
+            right: 0;
+            border-style: solid;
+            border-color: #0076ff;
+            border-width: 0 0 0 2px;
+            border-radius: 20px 0 0 20px / 28px 0 0 28px;
+        }
+    }
+
+    .input-section--submit-button{
+        position: absolute;
+        right: 20%;
+    }
+
+}
+
+
