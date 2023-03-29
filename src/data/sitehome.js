@@ -344,6 +344,41 @@ export const callToActionTitle = {
     bgLink: '/website/assets/bv-asset/bv-footer-banner.png',
 }
 
+export const footerList = [
+    {
+        title: 'About Bitverse',
+        isInputType: false,
+        inputPlaceholder: '',
+        firstDesc: 'We are an information system solutions provider with core expertise in corporate automation platforms and software development.',
+        secondDesc: 'Copyright ©2023 All rights reserved',
+        isBullettedList: false, 
+        bullettedItems: [],
+    },
+    {
+        title: 'Newsletter',
+        isInputType: true,
+        inputPlaceholder: 'Enter Email Address',
+        firstDesc: 'Stay updated with our latest trends',
+        secondDesc: '',
+        isBullettedList: false,
+        bullettedItems: [],
+    },
+    {
+        title: 'Reach Us',
+        isInputType: false,
+        inputPlaceholder: '',
+        firstDesc: '',
+        secondDesc: '',
+        isBullettedList: true,
+        bullettedItems: [
+        'Unit 06002 6th Flr FourEcom East Tower Bldg. Harbor Drive Pasay City, PHILIPPINES',
+        'Tel. (02) 871-59435',
+        'info@bit-verse.com',
+        ] 
+    },
+    
+];
+
 export default {
     staticNavMsg,
     upperNavData,
@@ -360,4 +395,5 @@ export default {
     websitePortfolioTitle,
     websitePortfolioList,
     callToActionTitle,
+    footerList,
 };
