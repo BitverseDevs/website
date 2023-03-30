@@ -1,11 +1,18 @@
 import React from 'react';
-import { footerList } from '@/data';
+// import { footerList, footerBg } from '@/data';
 import Input from './footerinput/input';
 import './footerv1.scss';
 
 export function FooterV1(props) {
+    //To do: Doesn't  take null value; 'need mock data fallback';
+    const footerList = Object?.values(props?.footerList);
+    const footerBg = props?.footerBg;
+    const footerBgStyle = {
+        background: `url(${footerBg})`,
+    };
+    // console.log(footerBg, 'meow')
     return (
-        <section className={'footer-section--wrap'}> 
+        <section className={'footer-section--wrap'} style={footerBgStyle}> 
             {footerList.map((item)=>{
                 const {
                     title,

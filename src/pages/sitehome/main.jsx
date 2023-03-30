@@ -5,7 +5,9 @@ import {
     productSpecificationList, 
     websitePortfolioList ,
     callToActionTitle,
+    footerList,
 } from '../../data/sitehome';
+import { footerBg } from '@/data';
 import { 
     Uppernav, 
     Sitehero, 
@@ -40,7 +42,7 @@ export function Main() {
                     <WebsitePortfolio portfolios={websitePortfolioList}/>
                 {/* </> */}
                 <CallToAction data={callToActionTitle}/>
-                <FooterV1/>
+                <FooterV1 footerList={footerList} footerBg={footerBg}/>
             </summary>
         </React.Fragment>
     );

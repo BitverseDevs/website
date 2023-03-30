@@ -11,7 +11,12 @@ export const borderLine = [
     },
 ];
 
+export const footerBg = {
+    bgsrc: '/website/assets/bv-asset/bv-footer-bg.png'
+};
+
 
 export default {
-    borderLine
+    borderLine,
+    footerBg
 };
